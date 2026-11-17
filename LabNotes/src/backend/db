@@ -1,0 +1,13 @@
+using System;
+using Microsoft.Data.SqlClient;
+using Microsoft.VisualBasic;
+
+public static class Db
+{
+    public static SqlConnection Open()
+    {
+        var conn = new SqlConnection(constants.ConnectionString);
+        conn.Open();
+        return conn;
+    }
+}
