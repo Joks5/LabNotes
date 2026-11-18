@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LabNotesPCTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c3af6ce7793d5d27b28de6c3830783daf603618")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a12803c27a8b9ccd38cbe13e802b683de8fedbcb")]
 [assembly: System.Reflection.AssemblyProductAttribute("LabNotesPCTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LabNotesPCTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

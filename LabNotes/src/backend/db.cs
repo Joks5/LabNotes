@@ -48,14 +48,9 @@ namespace LabPCTracker.Backend
             if (created && File.Exists(SchemaPath))
             {
                 using var conn = Open();
-                foreach (var batch in File.ReadAllText(SchemaPath)
-                         .Split(new[] { "\nGO", "\r\nGO" }, StringSplitOptions.RemoveEmptyEntries))
-                {
-                    if (string.IsNullOrWhiteSpace(batch)) continue;
-                    using var cmd = conn.CreateCommand();
-                    cmd.CommandText = batch;
-                    cmd.ExecuteNonQuery();
-                }
+                using var cmd = conn.CreateCommand();
+                cmd.CommandText = File.ReadAllText(SchemaPath);
+                cmd.ExecuteNonQuery();
             }
         }
     }

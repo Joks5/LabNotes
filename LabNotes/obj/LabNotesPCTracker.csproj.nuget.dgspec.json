@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\LabNotes\\LabNotes\\LabNotesPCTracker.csproj": {}
+    "C:\\LabNotes\\Labnotes\\LabNotesPCTracker.csproj": {}
   },
   "projects": {
-    "C:\\LabNotes\\LabNotes\\LabNotesPCTracker.csproj": {
+    "C:\\LabNotes\\Labnotes\\LabNotesPCTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\LabNotes\\LabNotes\\LabNotesPCTracker.csproj",
+        "projectUniqueName": "C:\\LabNotes\\Labnotes\\LabNotesPCTracker.csproj",
         "projectName": "LabNotesPCTracker",
-        "projectPath": "C:\\LabNotes\\LabNotes\\LabNotesPCTracker.csproj",
+        "projectPath": "C:\\LabNotes\\Labnotes\\LabNotesPCTracker.csproj",
         "packagesPath": "C:\\Users\\Marky\\.nuget\\packages\\",
-        "outputPath": "C:\\LabNotes\\LabNotes\\obj\\",
+        "outputPath": "C:\\LabNotes\\Labnotes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
