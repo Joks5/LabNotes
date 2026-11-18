@@ -2,11 +2,7 @@ using System;
 
 public static class Constants
 {
-    public const string Server = @".\SQLEXPRESS01";
     public const string Database = "MyDb";
-    public const string ConnectionString =
-        @"Server=.\SQLEXPRESS01;Database=MyDb;Integrated Security=true;TrustServerCertificate=true;";
-
     public const string RoleAdmin = "admin";
     public const string RoleTeacher = "teacher";
 
