@@ -14,6 +14,7 @@ CREATE TABLE computers (
     computer_id INT PRIMARY KEY IDENTITY(1,1),
     pc_name VARCHAR(50) NOT NULL,
     lab_id INT,
+    status VARCHAR(20) DEFAULT 'Available',
     FOREIGN KEY (lab_id) REFERENCES labs(lab_id)
 );
 
@@ -95,6 +96,11 @@ INSERT INTO computers (pc_name, lab_id) VALUES
 ('EDTECH2-PC11', 5), ('EDTECH2-PC12', 5), ('EDTECH2-PC13', 5), ('EDTECH2-PC14', 5), ('EDTECH2-PC15', 5),
 ('EDTECH2-PC16', 5), ('EDTECH2-PC17', 5), ('EDTECH2-PC18', 5), ('EDTECH2-PC19', 5), ('EDTECH2-PC20', 5),
 ('EDTECH2-PC21', 5), ('EDTECH2-PC22', 5), ('EDTECH2-PC23', 5), ('EDTECH2-PC24', 5), ('EDTECH2-PC25', 5);
+
+-- Status: every PC starts as Available (the column default).
+-- Faulty = still works but has a problem, Broken = does not work at all.
+UPDATE computers SET status = 'Faulty' WHERE pc_name IN ('LAB1-PC01', 'LAB2-PC09', 'LAB3-PC13', 'EDTECH2-PC12');
+UPDATE computers SET status = 'Broken' WHERE pc_name IN ('EDTECH1-PC22', 'EDTECH1-PC23');
 
 -- 3. Software (IDs 1 to 16)
 INSERT INTO software (software_name) VALUES
