@@ -41,6 +41,20 @@ CREATE TABLE schedules (
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
+CREATE TABLE issue_logs (
+    log_id INT PRIMARY KEY IDENTITY(1,1),
+    computer_id INT NOT NULL,
+    lab_id INT NOT NULL,
+    reported_by INT NOT NULL,
+    description VARCHAR(500) NOT NULL,
+    reported_at DATETIME2 NOT NULL DEFAULT SYSDATETIME(),
+    resolved_at DATETIME2 NULL,
+    FOREIGN KEY (computer_id) REFERENCES computers(computer_id),
+    FOREIGN KEY (lab_id) REFERENCES labs(lab_id),
+    FOREIGN KEY (reported_by) REFERENCES users(user_id),
+    CHECK (resolved_at IS NULL OR resolved_at >= reported_at)
+);
+
 
 -- 1. Insert Users (Commas between rows, semicolon at the end)
 INSERT INTO users (full_name, gender, role) VALUES
