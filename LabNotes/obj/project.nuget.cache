@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0iC01XCMJWk=",
+  "dgSpecHash": "8oYf5F0bsPo=",
   "success": true,
-  "projectFilePath": "C:\\LabNotes\\Labnotes\\LabNotesPCTracker.csproj",
+  "projectFilePath": "C:\\LabNotes\\LabNotes\\LabNotesPCTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marky\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.21\\microsoft.bcl.cryptography.9.0.21.nupkg.sha512",
     "C:\\Users\\Marky\\.nuget\\packages\\microsoft.data.sqlclient\\7.1.2\\microsoft.data.sqlclient.7.1.2.nupkg.sha512",
