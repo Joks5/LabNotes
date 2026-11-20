@@ -2,7 +2,8 @@ CREATE TABLE users (
     user_id INT PRIMARY KEY IDENTITY(1,1),
     full_name VARCHAR(100) NOT NULL,
     gender VARCHAR(50),
-    role VARCHAR(50)
+    role VARCHAR(50),
+    password VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE labs (
@@ -57,10 +58,10 @@ CREATE TABLE issue_logs (
 
 
 -- 1. Insert Users (Commas between rows, semicolon at the end)
-INSERT INTO users (full_name, gender, role) VALUES
-('Bill Bernando', 'Male', 'Teacher'),
-('John Christian Lor', 'Male', 'Teacher'),
-('Dennis Nava', 'Male', 'Teacher');
+INSERT INTO users (full_name, gender, role, password) VALUES
+('Bill Bernando', 'Male', 'Teacher', 'bill123'),
+('John Christian Lor', 'Male', 'Teacher', 'john123'),
+('Dennis Nava', 'Male', 'Teacher', 'dennis123');
 
 -- 2. Insert Labs
 INSERT INTO labs (lab_name) VALUES
